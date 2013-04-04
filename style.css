@@ -1,7 +1,7 @@
 /* 
-Theme Name: Responsive Child Theme 
+Theme Name: Responsive Child Theme eith extra widgets
 Theme URI: http://themeid.com/responsive-theme/ 
-Description: Responsive Theme is a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload, Social Networking and Webmaster Tools etc. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, W3C Markup Validated and currently translated into 40 languages. Cross-Browser compatible and yes even the IE7. No paid memberships or clubs to get a FREE/Responsive Support you need. http://themeid.com/support/
+Description: This child theme add three new sidebar areas. A single widget sidebar, double widgets sidebar and quadruple widgets sidebar. They all can be loaded by using action hooks.
 
 Template: responsive
 Version: 1.0.0
@@ -32,8 +32,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -------------------------------------------------------------- */
 @import url('../responsive/style.css');
 
-
-	
 /* =Start From Here
 -------------------------------------------------------------- */
 
@@ -44,9 +42,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
+
+
+
 //* =Media Print
-    If you're working on a Child Theme, make sure that all
-    media queries are included in your style.css
+	If you're working on a Child Theme, make sure that all
+	media queries are included in your style.css
 -------------------------------------------------------------- */
 @media print {
 
@@ -64,7 +65,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 }
 
 /*  Retina (HiDPI) Display
-    http://www.quirksmode.org/blog/archives/2013/06/devicepixelrati.html
+	http://www.quirksmode.org/blog/archives/2013/06/devicepixelrati.html
 -------------------------------------------------------------- */
 @media 
 	only screen and (-moz-min-device-pixel-ratio:1.5), 
