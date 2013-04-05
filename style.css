@@ -8,9 +8,6 @@ Template: responsive
 Version: 1.0
 */
 
-/* Import Responsive Styles */
-@import url('../responsive/style.css');
-
 /* =Import Styles
 -------------------------------------------------------------- */
 @import url('../responsive/style.css');
