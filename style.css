@@ -97,12 +97,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		margin: 20px 0 0 0;
 	}
 
-	.home.page-template-default #widgets {
+	.front-page  #widgets {
 		margin-top: 40px;
 	}
 
 	.top-widget,
-	.home.page-template-default .top-widget {
+	.front-page  .top-widget {
 		margin-top: 0 !important;
 	}
 
