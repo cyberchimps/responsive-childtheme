@@ -67,15 +67,15 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 
 		<?php responsive_header_top(); // before header content hook ?>
     
-        <?php if (has_nav_menu('top-menu', 'responsive')) { ?>
-	        <?php wp_nav_menu(array(
-				    'container'       => '',
+		<?php if (has_nav_menu('top-menu', 'responsive')) { ?>
+			<?php wp_nav_menu(array(
+					'container'       => '',
 					'fallback_cb'	  =>  false,
 					'menu_class'      => 'top-menu',
 					'theme_location'  => 'top-menu')
 					); 
 				?>
-        <?php } ?>
+		<?php } ?>
         
     <?php responsive_in_header(); // header hook ?>
    
