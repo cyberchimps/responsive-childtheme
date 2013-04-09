@@ -26,7 +26,6 @@ if ( !defined('ABSPATH')) exit;
  * Globalize Theme Options
  */
 global $responsive_options;
-$responsive_options = responsive_get_options();
 
 /**
  * If front page is set to display the
@@ -34,18 +33,20 @@ $responsive_options = responsive_get_options();
  * otherwise, display static front page
  * content
  */
-if ( 'posts' == get_option( 'show_on_front' ) ) {
+if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page'] != 1 ) {
 	get_template_part( 'home' );
-} else if ( 'default' != get_post_meta( get_option( 'page_on_front' ), '_wp_page_template', true ) ) {
-	locate_template( get_post_meta( get_option( 'page_on_front' ), '_wp_page_template', true ), true );
+} elseif ( 'page' == get_option( 'show_on_front' ) && $responsive_options['front_page'] != 1 ) {
+	$template = get_post_meta( get_option( 'page_on_front' ), '_wp_page_template', true );
+	$template = ( $template == 'default' ) ? 'index.php' : $template;
+	locate_template( $template, true );
 } else { 
 
-	get_header(); 
+	get_header();
 	?>
 
 	<div id="featured" class="grid col-940">
 
-			<?php echo do_shortcode( $responsive_options['featured_content'] ); ?>
+		<?php echo do_shortcode( $responsive_options['featured_content'] ); ?>
 
 	</div><!-- end of #featured -->
 
