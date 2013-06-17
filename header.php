@@ -154,13 +154,15 @@ if ( defined( 'WPSEO_VERSION' ) ) {
          ?>
 
     <?php get_sidebar('top'); ?>
-			    
+
 				<?php wp_nav_menu(array(
-				    'container'       => '',
+					'container'       => 'div',
+					'container_class' => 'main-nav',
+					'fallback_cb'     => 'responsive_fallback_menu',
 					'theme_location'  => 'header-menu')
-					); 
+				);
 				?>
-                
+
             <?php if (has_nav_menu('sub-header-menu', 'responsive')) { ?>
 	            <?php wp_nav_menu(array(
 				    'container'       => '',
