@@ -3,7 +3,7 @@ Theme Name: Responsive Child Theme
 Theme URI: http://themeid.com/responsive-theme/
 Description: Responsive Child Theme
 
-Template: responsive
+Template: responsivepro
 Version: 1.0.0
 Author: ThemeID 
 Author URI: http://themeid.com
@@ -18,7 +18,7 @@ Responsive WordPress Theme, Copyright (C) 2003-2012 Emil Uzelac
 
 /* =Import Styles
 -------------------------------------------------------------- */
-@import url('../responsive/style.css');
+@import url('../responsivepro/style.css');
 
 /* =Start From Here
 -------------------------------------------------------------- */
