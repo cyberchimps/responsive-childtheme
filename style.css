@@ -1,0 +1,28 @@
+/*
+Theme Name: Responsive II Child Theme
+Theme URI: https://github.com/cyberchimps/responsive-childtheme/tree/responsive-II-social-icons
+Description: Responsive II Social Icons Top Child Theme
+Template: responsive-mobile
+Version: 1.0.0
+Author: CyberChimps
+Author URI: https://cyberchimps.com
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: responsive-mobile-child
+Responsive II WordPress Child Theme, Copyright (C) 2011-2014 CyberChimps
+*/
+
+/* =Start From Here
+-------------------------------------------------------------- */
+
+#social-icons-container.header-social-icons {
+	text-align: right;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	float: none;
+}
+
+.header-social-icons .social-icons li a:before {
+	color: #333333;
+}
